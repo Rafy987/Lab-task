@@ -1,0 +1,6 @@
+class main{
+    public static void main(Strings args[]){
+        int a;
+        system.out.print("CODE");
+    }
+}
