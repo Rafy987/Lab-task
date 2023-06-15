@@ -1,0 +1,19 @@
+#include<stdio.h>
+int Calculatepower(int base ,int exponenet){
+	if(exponenet==0){
+		return 1;
+	}
+	else{
+		return base*Calculatepower(base,exponenet-1);
+	}
+}
+int main(){
+	int base,exponenet;
+	printf("Enter a base : ");
+	scanf("%d",&base);
+	printf("\nEnter a exponenet : ");
+	scanf("%d",&exponenet);
+	int power;
+	power=Calculatepower(base,exponenet);
+	printf("The power of %d raised %d is %d\n",base,exponenet,power);
+}
