@@ -1,0 +1,15 @@
+#include<stdio.h>
+int CalculateSum(int num){
+	if(num==1){
+		return 1;
+		return num+CalculateSum(num-1);
+	}
+}
+void main(){
+	int num,sum;
+	printf("Enter a number : ");
+	scanf("%d",&num);
+	sum=CalculateSum(num);
+	printf("\nThe Sum of 1 to %d is %d",num,sum);
+	
+}
