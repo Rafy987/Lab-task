@@ -1,0 +1,14 @@
+#include<stdio.h>
+int printNumber(int num){
+	if(num>0){
+		printNumber(num-1);
+		printf("\n%d",num);
+	}
+}
+void main(){
+	int num;
+	printf("Enter a first numbers ");
+	scanf("%d",&num);
+	printNumber(num);
+    printf("\nThe first %d numbers are: ", num);
+}
