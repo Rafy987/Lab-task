@@ -1,0 +1,19 @@
+#include<stdio.h>
+int CalculateFact(num){
+	if (num == 0) 
+	{
+    return 1;
+  } 
+  else 
+  {
+    return num*CalculateFact(num - 1);
+  }
+}
+void main(){
+	int num;
+	printf("Enter a number ");
+	scanf("%d",&num);
+	int fact;
+	fact=CalculateFact(num);
+	printf("\nFactorial of %d is %d",num,fact);
+}
