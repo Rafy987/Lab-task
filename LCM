@@ -1,0 +1,19 @@
+#include<stdio.h>
+int CalculateLcm(int a ,int b){
+	if(a==b){
+		return a;
+		return a*CalculateLcm(b,a%b);
+	}
+}
+void main(){
+	int a,b;
+	printf("Enter a first number : ");
+	scanf("%d",&a);
+	printf("\nEnter a second number : ");
+	scanf("%d",&b);
+	int lcm;
+	lcm=CalculateLcm(a,b);
+	printf("\nThe lcm of %d and %d is %d",a,b,lcm);
+	
+	return 0;
+}
