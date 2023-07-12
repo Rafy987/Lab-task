@@ -1,0 +1,17 @@
+#include<stdio.h>
+
+void printRafay();
+void printGoodBye();
+
+int main(){
+	printf("\nRafay");
+	printf("\nGoodBye");
+}
+
+void printRafay(){
+	printf("\Rafay");
+}
+
+void printGoodbye(){
+	printf("\nGoodBye");
+}
